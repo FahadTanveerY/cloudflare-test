@@ -1,0 +1,14 @@
+name = "cloudflare-workers-crud"
+type = "javascript"
+zone_id = ""
+account_id = "a14a8123f4abd24df8e9df9512399197"
+route = "https://cloudflare-workers-crud.whydonate.workers.dev/"
+workers_dev = true
+compatibility_date = "2022-04-04"
+# webpack_config = "webpack.config.js"
+
+[build]
+command = "npm run build"
+[build.upload]
+format = "service-worker"
+
