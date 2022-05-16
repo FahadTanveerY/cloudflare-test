@@ -47,11 +47,14 @@ var update_handler = function (req) { return __awaiter(void 0, void 0, void 0, f
                 return [4 /*yield*/, req.json()];
             case 1:
                 _a = _b.sent(), id = _a.id, emp_name = _a.emp_name, designation = _a.designation;
-                return [4 /*yield*/, index_1.prisma_i.user.update({
+                return [4 /*yield*/, index_1.prisma_i.whydonate_employees.update({
                         where: {
                             id: Number(id)
                         },
-                        data: {}
+                        data: {
+                            emp_name: emp_name,
+                            designation: designation
+                        }
                     })];
             case 2:
                 data_p = _b.sent();

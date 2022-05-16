@@ -47,7 +47,7 @@ var delete_handler = function (req) { return __awaiter(void 0, void 0, void 0, f
                 return [4 /*yield*/, req.json()];
             case 1:
                 id = (_a.sent()).id;
-                return [4 /*yield*/, index_1.prisma_i.user["delete"]({
+                return [4 /*yield*/, index_1.prisma_i.whydonate_employees["delete"]({
                         where: {
                             id: Number(id)
                         }

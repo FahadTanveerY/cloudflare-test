@@ -48,7 +48,7 @@ var read_handler = function (req) { return __awaiter(void 0, void 0, void 0, fun
         switch (_a.label) {
             case 0:
                 _a.trys.push([0, 2, , 3]);
-                return [4 /*yield*/, index_1.prisma_i.$queryRaw(templateObject_1 || (templateObject_1 = __makeTemplateObject(["select * from user"], ["select * from user"])))];
+                return [4 /*yield*/, index_1.prisma_i.$queryRaw(templateObject_1 || (templateObject_1 = __makeTemplateObject(["select * from whydonate_employees"], ["select * from whydonate_employees"])))];
             case 1:
                 data_p = _a.sent();
                 return [2 /*return*/, new Response(JSON.stringify({
