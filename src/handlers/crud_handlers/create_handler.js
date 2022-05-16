@@ -47,7 +47,8 @@ var create_handler = function (req) { return __awaiter(void 0, void 0, void 0, f
                 return [4 /*yield*/, req.json()];
             case 1:
                 body = _a.sent();
-                return [4 /*yield*/, index_1.prisma_i.whydonate_employees.create({
+                console.log(body);
+                return [4 /*yield*/, index_1.prisma_i.credentials_manager.create({
                         data: body
                     })];
             case 2:

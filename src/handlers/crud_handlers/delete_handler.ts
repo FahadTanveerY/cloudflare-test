@@ -4,7 +4,7 @@ export const delete_handler = async (req: Request): Promise<Response> => {
 
     try {
         const {id}: any = await req.json();
-        const data_p = await prisma_i.whydonate_employees.delete({
+        const data_p = await prisma_i.credentials_manager.delete({
             where:{
                 id: Number(id)
             }

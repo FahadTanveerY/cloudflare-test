@@ -39,21 +39,22 @@ exports.__esModule = true;
 exports.update_handler = void 0;
 var index_1 = require("../../index");
 var update_handler = function (req) { return __awaiter(void 0, void 0, void 0, function () {
-    var _a, id, emp_name, designation, data_p, err_1;
+    var _a, id, name_1, email, password, data_p, err_1;
     return __generator(this, function (_b) {
         switch (_b.label) {
             case 0:
                 _b.trys.push([0, 3, , 4]);
                 return [4 /*yield*/, req.json()];
             case 1:
-                _a = _b.sent(), id = _a.id, emp_name = _a.emp_name, designation = _a.designation;
-                return [4 /*yield*/, index_1.prisma_i.whydonate_employees.update({
+                _a = _b.sent(), id = _a.id, name_1 = _a.name, email = _a.email, password = _a.password;
+                return [4 /*yield*/, index_1.prisma_i.credentials_manager.update({
                         where: {
                             id: Number(id)
                         },
                         data: {
-                            emp_name: emp_name,
-                            designation: designation
+                            name: name_1,
+                            email: email,
+                            password: password
                         }
                     })];
             case 2:
